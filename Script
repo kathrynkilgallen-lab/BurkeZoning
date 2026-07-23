@@ -85,7 +85,7 @@ def fetch_and_filter_press_releases():
                     {
                         "Date Posted": date_posted_str,
                         "Title": title,
-                        "Summary / Content": text_content,
+                        "Summary / Content": text_content[:1000],
                         "URL": link,
                         "_parsed_date": dt_object,  # Used solely for sorting
                     }
